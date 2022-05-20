@@ -67,7 +67,7 @@ body{
   
 }
  header {
-  height: 30vh;
+  
   width: 100%;
 }
 .logo {
@@ -93,6 +93,7 @@ nav a{
  color: var(--clr-btn);
  text-decoration: none;
 }
+
 .btn:hover,
 .btn:focus{
   border: 1px solid var(--clr-bg-light);
@@ -167,6 +168,7 @@ article{
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding-block: 2rem;
 }
 .list{
   color: var(--clr-btn);
@@ -220,6 +222,7 @@ aside img{
   text-align: center;
   width: min(95%,70rem);
   color: var(--clr-bg-light);
+  padding-block: 2rem;
 }
 .sub-title a{
   text-decoration: none;
@@ -227,6 +230,7 @@ aside img{
   font-weight: 900;
   font-size: 1.5rem;
   color: #DC143C;
+ 
 }
 .control{
   background-color: var(--clr-bl);
@@ -300,9 +304,9 @@ footer{
 }
 .footer__links li a:hover {
   background-color: #000;
-  padding: .2em;
-  color: var(--clr-btnbtn);
-  transform: scale(4rem);
+  padding: .5em;
+  color: var(--clr-accent);
+  
 }
 .social__links a{
 margin-left: 2rem;
@@ -329,10 +333,10 @@ margin-left: 2rem;
 .fab:hover,
 .fab:focus{
   transform: scale(1);
-  border: 1px solid var(--clr-accent);
+  border: 1px solid var(--clr-dark);
   
   
-  outline: 1px solid var(--clr-accent);
+  outline: 1px solid var(--clr-dark);
   outline-offset: 1px;
   transition: .4s ease-out;
 } 
@@ -353,10 +357,49 @@ margin-left: 2rem;
   .forms{
     grid-template-columns: 1fr;
   }
-  footer{
+  .footer{
     grid-template-columns: 1fr;
-    margin-inline: auto;
-    width: min(95%, 75rem);
-    place-items: center;
   }
+  nav {
+    flex-direction: column;
+    
+    
+    
+  }
+
+  .nav__links li a{
+    margin-left: 1rem;
+  }
+  .logo{
+      text-align: center;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      font-size: 1srem;
+      margin-left: 3rem;
+  }
+  .btn {
+      text-align: center;
+      margin-left: 2rem;
+     
+  }
+  .social__links a{
+    margin-left: 1rem;
+    
+    }
+    h1{
+        letter-spacing: 0.2rem;
+        font-size: 1.5rem;
+    }
+}
+@media(min-width:920px){
+    nav {
+        display: flex;
+        justify-content: space-between;
+        line-height: 1;
+        align-items: center;
+        
+      } 
+      .btn a{
+          padding-left: 2rem;
+      }
 }
