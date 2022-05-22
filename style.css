@@ -79,6 +79,9 @@ body{
   margin-left: 3rem;
 
 }
+.btn {
+    margin: 1rem 2rem;
+}
 span{
   color: var(--clr-btn);
 }
@@ -95,7 +98,7 @@ nav a{
 }
 
 .btn:hover,
-.btn:focus{
+.btn:focus a{
   border: 1px solid var(--clr-bg-light);
   background-color: var(--clr-accent);
   outline: 2.2px solid var(--clr-accent);
@@ -354,6 +357,10 @@ margin-left: 2rem;
   color: var(--clr-bg-light);
 }
 @media(max-width:768px){
+   body{
+       font-size: 1rem;
+       font-weight: 300;
+   }
   .forms{
     grid-template-columns: 1fr;
   }
@@ -362,9 +369,11 @@ margin-left: 2rem;
   }
   nav {
     flex-direction: column;
-    
-    
-    
+  
+  }
+  
+  .sub-title {
+      margin: 1rem;
   }
 
   .nav__links li a{
@@ -399,7 +408,7 @@ margin-left: 2rem;
         align-items: center;
         
       } 
-      .btn a{
-          padding-left: 2rem;
-      }
+      .sub-title {
+        margin-left: 2rem;
+    }
 }
